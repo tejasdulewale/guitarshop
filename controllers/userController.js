@@ -29,7 +29,7 @@ const userRegister = async (req, res) => {
   res.send("User registered successfully");
 };
 
-const userRegister = async (req, res) => {
+const userLogin = async (req, res) => {
   const { email, password } = req.body;
   let user = await user.findOne({ email });
   if (!user) {
