@@ -2,8 +2,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 import express from "express"
 import connection from './config/database.js'
-import ownerRegister from './routes/ownerRoutes.js'
-import userRegister from './routes/userRoutes.js'
+import ownerRoutes from './routes/ownerRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 
 const app = express()
@@ -13,8 +13,8 @@ connection()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.use("/owner",ownerRegister)
-app.use("/user",userRegister)
+app.use("/owner",ownerRoutes)
+app.use("/user",userRoutes)
 
 
 
