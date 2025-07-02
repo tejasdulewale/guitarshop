@@ -1,0 +1,25 @@
+project initilize done
+application server done
+database server
+
+advance schema
+model
+
+create
+
+
+
+user
+
+  username = String
+  email = String
+  password = string
+  phone no = Number
+  address = String
+  cart = array
+  orders = array
+
+
+http://localhost:3000
+http://localhost:3000/owner/regiter
+
